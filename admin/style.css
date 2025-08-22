@@ -1,0 +1,140 @@
+:root{
+    --brand: #BA9731;
+    --brand-light: #d5bc6f;
+    --brand-dark: #685828;
+    --gray: #4a4a4a;
+}
+
+html{
+    background-color: #302f2f;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.side-pannel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #252525;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.user-chip {
+    display: flex;
+    align-items: center;     /* keeps avatar + text vertically aligned */
+    padding: 0 0px;
+    height: 60px;            /* slightly taller to fit two lines */
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: var(--brand);
+    margin-bottom: 120px;    /* space between user chip and links */
+    margin-top:20px
+}
+
+.user-chip img {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.user-chip-text {
+    display: flex;
+    flex-direction: column;  /* stack name above role */
+    line-height: 1.2;
+    color: white;
+}
+
+.user-chip-text-role {
+    font-size: 0.9em;
+    color: rgb(81, 81, 81);
+}
+
+.side-pannel-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.side-pannel-links li {
+    list-style: none;
+    margin: 10px 0;
+    background-color: #4a4a4a;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.side-pannel-links li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;         /* spacing inside the button */
+    height: 100%;
+    gap: 10px;               /* space between icon + text */
+    border-radius: 5px;
+}
+
+.side-pannel-links li a img {
+    width: 30px;
+    height: 30px;
+    
+}
+.applications-content{
+    margin-left: 300px; /* Adjust based on the width of the side panel */
+    padding: 20px;
+}
+
+.page-title {
+    position: fixed;       /* stays at the top */
+    top: 0;
+    left: 0;
+    width: 100vw;          /* full viewport width */
+    font-size: 20px;
+    background-color: var(--gray);
+    padding: 10px;
+    color: white;
+    z-index: -1;         /* sit above sidebar */
+    padding-left: 300px; /* space for the side panel */
+}
+
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* space below the fixed title */
+    color: white;
+}
+
+.applications-filter{
+    margin-top: 100px;
+    color: var(--brand);
+}
+
+table {
+  border-collapse: collapse; /* merge borders */
+  width: 100%;               /* full width */
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #ddd;    /* grid look */
+  padding: 10px;
+  text-align: left;
+}
+.logout{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 220px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;         /* spacing inside the button */
+    height: 100%;            /* space between icon + text */
+    border-radius: 5px;
+}
